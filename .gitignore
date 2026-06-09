@@ -1,0 +1,48 @@
+# Compiled binaries
+*.exe
+*.out
+*.o
+*.a
+*.so
+*.dll
+
+# Build directories
+build/
+bin/
+obj/
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# Kernel module build artifacts
+*.ko
+*.mod
+*.mod.c
+*.mod.o
+*.symvers
+*.order
+.tmp_versions/
+
+# Debugger files
+*.dSYM/
+*.su
+
+# Editor/IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Perf/profiling output
+perf.data
+perf.data.old
+*.flamegraph
+gmon.out
