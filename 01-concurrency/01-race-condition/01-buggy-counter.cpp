@@ -36,7 +36,8 @@ static const int EXPECTED       = NUM_THREADS * OPS_PER_THREAD;
 // on a production server under high load. That 1% is catastrophic.
  
 // Shared counter variable. All threads will read-modify-write this variable.
-long long counter = 0;
+//introduce volatile here beacause i have to force the race conditions as with O3 optimisation compilers automatically matching expected and buggy
+volatile long long counter = 0;
 
 // Worker thread function. Each thread will increment the counter this many times.
 void worker() {
